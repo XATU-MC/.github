@@ -17,12 +17,16 @@
         <el-menu-item index="2-2">建筑服</el-menu-item>
         <el-menu-item index="2-3">模组服</el-menu-item>
       </el-sub-menu>
-      <el-link href="https://skin.mualliance.ltd/"><el-menu-item index="3">皮肤站</el-menu-item></el-link>
+      <el-link href="https://skin.mualliance.ltd/">
+        <el-menu-item index="3">皮肤站</el-menu-item>
+      </el-link>
     </el-menu>
   </el-header>
   <div>
-    <MainPage v-if="activeIndex=='1'" :height="getHeight"/>
-    <iframe v-else-if="activeIndex=='2-1'" src="https://server.cjsah.net:8321" width="100%" :height="getHeight()"
+    <MainPage v-if="activeIndex=='1'" :height="height"/>
+    <iframe v-else-if="activeIndex=='2-1'" src="https://server.cjsah.net:8321" width="100%" :height="height"
+            style="position: fixed"/>
+    <iframe v-else-if="activeIndex=='3'" src="https://skin.mualliance.ltd" width="100%" :height="height"
             style="position: fixed"/>
     <NonePage v-else/>
   </div>
@@ -34,15 +38,14 @@ import MainPage from "@/views/MainPage.vue";
 import NonePage from "@/views/NonePage.vue";
 import {ref} from "vue";
 
+const height = ref(window.innerHeight - 60+"px");
 const activeIndex = ref("1");
 
 function handleSelect(key: string) {
   activeIndex.value = key;
 }
 
-function getHeight() {
-  return window.innerHeight - 60 + "px";
-}
+
 
 </script>
 

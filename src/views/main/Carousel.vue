@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {ref} from "vue";
-const pictures = ref(['p0000', 'p0001', 'p0002']);
+const pictures = ref(['p0000', 'p0001', 'p0002', 'p0003', 'p0004', 'p0005', 'p0006', 'p0007']);
 </script>
 
 <template>

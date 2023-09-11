@@ -20,8 +20,8 @@ class Server {
 const alertTitle = "申请开通个人邮箱业务的，只需将开通用户的个人身份证正面、校园卡正面及手机号码一并发送到xsmaster@xatu.edu.cn邮箱，系统管理员审核通过后，再经邮件反馈开通信息";
 const servers: Server[] = [
   new Server("生存服", "1.20.1", "原版生电", "vanilla.xatumc.top", "mua"),
-  new Server("建筑服", "1.20.1", "机械动力", "server.xatumc.top", "mua"),
-  new Server("模组服", "1.19.3", "复原学校", "build.xatumc.top", "mua"),
+  new Server("模组服", "1.20.1", "机械动力", "server.xatumc.top", "mua"),
+  new Server("建筑服", "1.19.3", "复原学校", "build.xatumc.top", "mua"),
 ];
 </script>
 
