@@ -43,7 +43,7 @@ import {Paperclip, UserFilled, Comment} from "@element-plus/icons-vue";
             <el-text class="title">友情链接</el-text>
           </el-form-item>
           <el-form-item>
-            <el-link href="https://www.mualliance.cn/" target="_blank">中国Minecraft高校联盟</el-link>
+            <el-link href="https://www.mualliance.cn/" target="_blank">Minecraft高校联盟</el-link>
           </el-form-item>
         </el-form>
       </el-col>
