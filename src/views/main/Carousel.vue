@@ -17,9 +17,9 @@ const pictures = ref([
 </script>
 
 <template>
-  <el-carousel class="carousel" :interval="4000" height="400px" type="card" arrow="never" indicator-position="none">
+  <el-carousel class="carousel" :interval="4000" height="27vw" type="card" arrow="never" indicator-position="none">
     <el-carousel-item v-for="picture in pictures" :key="picture">
-      <el-image :src="picture"/>
+      <el-image :src="picture" fit="contain"/>
     </el-carousel-item>
   </el-carousel>
 </template>
